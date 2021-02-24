@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" class="css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <title>page</title>
+</head>
+
+<body>
+    <div class="container">
+
+
+        <form action="" method="get" class="form">
+            <div class="re_">
+
+            </div>
+
+            <!-- nam-e_+.@namecomain.named -->
+            <input type="email" name="email" onkeyup="tester()" placeholder="Email" class="Email">
+
+            <input type="password" name="" placeholder="Password" class="pass">
+            <div class="fContainer">
+                <h5>Flier</h5>
+                <label for="TDI">TDI</label>
+                <input type="radio" value="TDI" name="fl" class="tdi">
+                <label for="TRI">TRI</label>
+                <input type="radio" value="TRI" name="fl">
+                <label for="TMI">TMI</label>
+                <input type="radio" name="fl" value="TMI">
+            </div>
+            <div class="ville_container">
+                <label for="ville">Ville</label>
+                <select name="ville" id="" class="vile">
+                <option value=""></option>
+                <option value="BM">Beni mellal</option>
+                <option value="casa">CasaBlanca</option>
+                <option value="tn">tnjr</option>
+                <option value="fqh">fquih ben salah</option>         
+       </select>
+            </div>
+            <div class="btn_cont">
+                <input type="button" value="Valide" onclick="valide()">
+                <input type="button" value="Envoyer" onclick="send_tester()">
+            </div>
+
+
+        </form>
+        <div class="Error_conatiner">
+            <span>LOG:</span>
+        </div>
+    </div>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
