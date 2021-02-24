@@ -1,0 +1,85 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(158, 190, 238);
+}
+
+.container {
+    position: relative;
+    min-height: 50vh;
+    width: 50%;
+    background-color: #1a1515be;
+  
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container * {
+    margin: 10px 0 10px 0;
+}
+
+.container:hover {
+    box-shadow: 0 8px 16px 0 rgba(241, 145, 145, 0.2);
+}
+
+.btn_cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn_cont input {
+    width: 30%;
+    margin: 10px;
+}
+.pass ,.Email{
+    border-radius: 10px;
+    background: none;
+    color: white;
+    font-size: 15px;
+}
+.Error_conatiner {
+    position: absolute;
+    bottom: 0%;
+    display: flex;
+    min-height: 5px;
+    width: 70%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-height: 10vh;
+    overflow: hidden;
+    background-color: red;
+    color: #fff;
+}
+
+.Error_conatiner.active {
+    animation: shake 1s ease forwards;
+}
+
+@keyframes shake {
+    0% {
+        left: 0px;
+    }
+    25% {
+        left: 5px;
+    }
+    40% {
+        left: 0px;
+    }
+    100% {
+        left: 5px;
+    }
+}
